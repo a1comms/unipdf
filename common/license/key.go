@@ -151,8 +151,8 @@ func (k *LicenseKey) IsLicensed() bool {
 
 func MakeUnlicensedKey() *LicenseKey {
 	lk := LicenseKey{}
-	lk.CustomerName = "Unlicensed"
-	lk.Tier = LicenseTierUnlicensed
+	lk.CustomerName = "AGPLv3 Open Source Community License"
+	lk.Tier = LicenseTierCommunity
 	lk.CreatedAt = time.Now().UTC()
 	lk.CreatedAtInt = lk.CreatedAt.Unix()
 	return &lk
